@@ -1,14 +1,12 @@
 html{
     scroll-behavior: smooth;
-    /*background: linear-gradient(to bottom, transparent, rgb(227, 34, 66));
-    background: linear-gradient(to bottom, transparent 0%, rgba(227, 34, 66, 0.5) 90%, rgb(227, 34, 66) 100%);*/
+
 }
 
 body.light-mode{
     display: flex;
     flex-direction: column;
     background-color: white;
-    
 }
 
 body.dark-mode {
@@ -21,9 +19,7 @@ body.dark-mode {
     top: 0vh;
     display: flex;
     position: fixed;
-    align-content: center;
-    align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 7%;
     background: linear-gradient(to bottom, white, transparent);
     z-index: 3;
@@ -33,10 +29,8 @@ body.dark-mode {
 .dark-mode .navBar{
     display: flex;
     position: fixed;
-    align-content: center;
-    align-items: center;
     width: 100%;
-    height: 10%;
+    height: 7%;
     background: linear-gradient(to bottom, black, transparent);
     z-index: 3;
     pointer-events: none;
@@ -59,7 +53,7 @@ body.dark-mode {
 
 .buttons-container{
     top: 0%;
-    width: 98%;
+    width: 98vw;
     display: flex;
     position: fixed;
     flex-direction: column;
@@ -69,7 +63,7 @@ body.dark-mode {
 }
 
 .switch-button-container{
-    margin: 0.5em;
+    margin: 0.5em 2em 0.5em 0.5em;
     height: 5em;
     width: 5em;
     border-radius: 50%;
@@ -112,17 +106,36 @@ body.dark-mode {
 }
 
 section{
-    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
     place-items: center;
+    width: 50%;
 }
 
 .info{
     display: flex;
     flex-direction: row;
+}
+
+@media (max-width: 700px){
+    .info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .studies-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5%;
+    }
+
+    #smitco-logo img{
+        width: 60vw;
+        height: fit-content;
+    }
 }
 
 @media only screen and (max-width: 768px){
@@ -200,7 +213,6 @@ section{
 .studies-container{
     display: flex;
     justify-content: center;
-    gap: 5%;
 }
 
 .light-mode .study-container{
@@ -213,6 +225,7 @@ section{
     background-color: white;
     min-width: 18em;
     transition: transform 0.3s ease;
+    margin: 2.5%;
 }
 
 .dark-mode .study-container{
@@ -502,8 +515,8 @@ section{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     z-index: -1; /* Asegura que esté detrás de todos los demás elementos */
     pointer-events: none; /* Evita que los elementos SVG bloqueen la interacción del usuario con otros elementos */
 }

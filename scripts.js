@@ -56,8 +56,8 @@ function createSVG (){
   div.innerHTML = randomSVG;
 
   const container = document.getElementById("svg-container");
-  div.style.top = Math.random() * 100 + "vh";
-  div.style.left = Math.random() * 100 + "vw";
+  div.style.top = Math.random() * 100 + "%";
+  div.style.left = Math.random() * 100 + "%";
 
   container.appendChild(div);
 

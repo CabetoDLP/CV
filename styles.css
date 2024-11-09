@@ -546,6 +546,84 @@ iframe {
         width: 60vw;
         height: fit-content;
     }
+
+    .light-mode .contact-container{
+        border: 0.2em solid black;
+        border-radius: 50%;
+        padding: 1em;
+        margin: 2.5%;
+        background-color: white;
+        transition: 0.3s ease;
+    }
+    
+    .dark-mode .contact-container{
+        border: 0.2em solid black;
+        border-radius: 50%;
+        border-color: blueviolet;
+        padding: 1em;
+        margin: 2.5%;
+        background-color: transparent;
+        transition: 0.3s ease;
+    }
+
+    .light-mode .contact-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 0.2em solid black;
+        border-color: black;
+        border-radius: 5%;
+        background-color: white;
+        transition: transform 0.3s ease;
+        padding: 2%;
+        width: 80vw;
+        height: 90vw;
+        margin: 2em;
+    }
+    
+    .dark-mode .contact-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 0.2em solid black;
+        border-color: blueviolet;
+        border-radius: 5%;
+        background-color: transparent;
+        transition: transform 0.3s ease;
+        padding: 2%;
+        width: 80vw;
+        height: 90vw;
+        margin: 2em;
+    }
+    
+    .light-mode .form-input{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 0.2em solid black;
+        border-radius: 5%;
+        background-color: white;
+        width: 65vw;
+        height: 15vw;
+        -webkit-text-fill-color: blueviolet;
+    }
+    
+    .dark-mode .form-input{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 0.2em solid black;
+        border-color: blueviolet;
+        border-radius: 5%;
+        background-color: transparent;
+        width: 65vw;
+        height: 15vw;
+        -webkit-text-fill-color: rgb(226, 251, 46);
+    }
 }
 
 @media (min-width: 769px){

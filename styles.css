@@ -38,13 +38,16 @@ body.dark-mode {
 }
 
 .navBar ul{
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /* Permitir varias filas */
+    justify-content: center; /* Centrar horizontalmente */
     list-style-type: none;
     pointer-events: all;
+    margin: 0;
+    padding: 0;
 }
 
 .navBar li{
-    float: left;
     padding: 1vw;
 }
 
@@ -537,6 +540,35 @@ iframe {
 }
 
 @media (max-width: 768px){
+    .circle-mask{
+        width: 12em; /* Tamaño de la máscara circular */
+        height: 12em;
+        border-radius: 50%; /* Hace la máscara circular */
+        overflow: hidden; /* Oculta el contenido fuera del círculo */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .circle-mask img{
+        width: 10em; /* Tamaño de la máscara circular */
+        height: auto;
+    }
+    
+    .background-shape{
+        background-color: gray; 
+        height: 10em; 
+        width: 8em; 
+        z-index: 1; 
+        align-self: center; 
+        position: absolute;
+        background: linear-gradient(to bottom, rgb(135, 251, 199), rgb(14, 112, 205));
+        border-radius: 5%;
+        top: 5em;
+    }
+    
     .info{
         display: flex;
         flex-direction: column;
@@ -623,6 +655,30 @@ iframe {
         width: 65vw;
         height: 15vw;
         -webkit-text-fill-color: rgb(226, 251, 46);
+    }
+
+    .light-mode h1{
+        font-size: 2em;
+    }
+    
+    .dark-mode h1{
+        font-size: 2em;
+    }
+
+    .light-mode p{
+        font-size: 1.2em;
+    }
+    
+    .dark-mode p{
+        font-size: 1.2em;
+    }
+
+    .light-mode a{
+        font-size: 0.8em;
+    }
+    
+    .dark-mode a{
+        font-size: 0.8em;
     }
 }
 

@@ -17,6 +17,7 @@ body.dark-mode {
 
 .light-mode .navBar{
     top: 0vh;
+    justify-content: center;
     display: flex;
     position: fixed;
     width: 100vw;
@@ -28,6 +29,7 @@ body.dark-mode {
 
 .dark-mode .navBar{
     top: 0vh;
+    justify-content: center;
     display: flex;
     position: fixed;
     width: 100vw;

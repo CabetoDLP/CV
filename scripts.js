@@ -225,17 +225,17 @@ document.getElementById(`nodeJS`).addEventListener(`click`, function() {openLink
 document.getElementById(`react`).addEventListener(`click`, function() {openLink(`https://www.udemy.com/course/react-cero-experto/`)});
 document.getElementById(`spring`).addEventListener(`click`, function() {openLink(`https://www.udemy.com/course/spring-framework-5/`)});
 
-document.getElementById(`cabetoArt`).addEventListener(`click`, function() {openLink(`https://cabeto-art-cabetodlps-projects.vercel.app/`)});
+document.getElementById(`cabetoArt`).addEventListener(`click`, function() {openLink(`https://cabeto-art.vercel.app/`)});
 
 document.querySelector(`.contact-form`).addEventListener(`submit`, function (event){
 
-  event.preventDefault();
+event.preventDefault();
 
-  emailjs.send("service_mwy96o9","template_lkgggnn", {
-    from_name: document.getElementById(`form-name`).value,
-    message: document.getElementById(`form-message`).value,
-    email_id: document.getElementById(`form-email`).value
-  });
+emailjs.send("service_mwy96o9","template_lkgggnn", {
+  from_name: document.getElementById(`form-name`).value,
+  message: document.getElementById(`form-message`).value,
+  email_id: document.getElementById(`form-email`).value
+});
 
 });
 

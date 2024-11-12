@@ -307,8 +307,8 @@ section{
     background-color: white;
     transition: transform 0.3s ease;
     padding: 2%;
-    width: 60vh;
-    height: 55vh;
+    width: auto;
+    height: auto;
     margin: 2em;
 }
 
@@ -323,8 +323,8 @@ section{
     background-color: transparent;
     transition: transform 0.3s ease;
     padding: 2%;
-    width: 60vh;
-    height: 55vh;
+    width: auto;
+    height: auto;
     margin: 2em;
 }
 
@@ -361,7 +361,6 @@ section{
     justify-content: center;
     flex-direction: column;
     border: 0.2em solid black;
-    border-color: black;
     border-radius: 5%;
     background-color: white;
     width: 15em;
@@ -374,18 +373,25 @@ section{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 0.2em solid black;
-    border-color: blueviolet;
+    border: 0.2em solid blueviolet;
     border-radius: 5%;
     background-color: transparent;
     width: 15em;
     height: 5em;
-    transition: 0.3s ease;
     -webkit-text-fill-color: rgb(226, 251, 46);
+    transition: 0.3s ease;
+}
+
+.light-mode .form-submit-button:hover{
+    color: rgb(19, 208, 35);;
 }
 
 .form-submit-button:hover{
     transform: scale(1.1);
+}
+
+.dark-mode .form-submit-button:hover{
+    -webkit-text-fill-color: rgb(218, 31, 112);
 }
 
 .presentation{
@@ -611,8 +617,6 @@ iframe {
         background-color: white;
         transition: transform 0.3s ease;
         padding: 2%;
-        width: 80vw;
-        height: 90vw;
         margin: 2em;
     }
     
@@ -627,8 +631,6 @@ iframe {
         background-color: transparent;
         transition: transform 0.3s ease;
         padding: 2%;
-        width: 80vw;
-        height: 90vw;
         margin: 2em;
     }
     

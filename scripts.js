@@ -123,7 +123,9 @@ const languages = {
     formMessage: `Escribe tu mensaje`,
     sendButton: `Enviar`,
     filesTitle: `Anexos`,
-    curriculum: `Hoja de vida`
+    curriculum: `Hoja de vida`,
+    sendMessage: `Mensaje enviado exitosamente`,
+    sendErrorMessage: `Ocurrio un error al enviar su mensaje, por favor intentelo nuevamente`
   },
   english: {
     aPresentationText: `Presentation`,
@@ -150,7 +152,9 @@ const languages = {
     formMessage: `Write your message`,
     sendButton: `Submit`,
     filesTitle: `Files`,
-    curriculum: `Curriculum`
+    curriculum: `Curriculum`,
+    sendMessage: `Message sent successfully`,
+    sendErrorMessage: `An error happened while sending the message, please try again`
   }
 }
 
@@ -235,7 +239,14 @@ emailjs.send("service_mwy96o9","template_lkgggnn", {
   from_name: document.getElementById(`form-name`).value,
   message: document.getElementById(`form-message`).value,
   email_id: document.getElementById(`form-email`).value
-});
+})
+.then((response)=>{
+  alert(languages[language].sendMessage);
+})
+.catch((error)=>{
+  alert(languages[language].sendErrorMessage);
+  console.error("Error al enviar el correo:", error);
+})
 
 });
 

@@ -19,32 +19,45 @@ body.dark-mode {
     top: 0vh;
     justify-content: center;
     display: flex;
+    flex-direction: column;
     position: fixed;
     width: 100vw;
-    height: 7vh;
-    background: linear-gradient(to bottom, white, transparent);
-    z-index: 3;
+    height:auto;
     pointer-events: none;
+    z-index: 3;
 }
 
 .dark-mode .navBar{
     top: 0vh;
     justify-content: center;
     display: flex;
+    flex-direction: column;
     position: fixed;
     width: 100vw;
-    height: 7vh;
-    background: linear-gradient(to bottom, black, transparent);
-    z-index: 3;
+    height: auto;
     pointer-events: none;
+    z-index: 3;
 }
 
-.navBar ul{
+.light-mode .navBar ul{
+    top: 0vh;
     display: flex;
     flex-wrap: wrap; /* Permitir varias filas */
     justify-content: center; /* Centrar horizontalmente */
     list-style-type: none;
-    pointer-events: all;
+    background: linear-gradient(to bottom, white, transparent);
+    margin: 0;
+    padding: 0;
+    pointer-events: auto;
+}
+
+.dark-mode .navBar ul{
+    top: 0vh;
+    display: flex;
+    flex-wrap: wrap; /* Permitir varias filas */
+    justify-content: center; /* Centrar horizontalmente */
+    list-style-type: none;
+    background: linear-gradient(to bottom, black, transparent);
     margin: 0;
     padding: 0;
 }
@@ -61,11 +74,9 @@ body.dark-mode {
     top: 0%;
     width: 98vw;
     display: flex;
-    position: fixed;
     flex-direction: column;
     justify-content: end;
     align-items: end;
-    z-index: 2;
 }
 
 .switch-button-container{
@@ -76,6 +87,7 @@ body.dark-mode {
     border: 0.2em solid black;
     border-color: black;
     transition: 0.3s ease;
+    pointer-events: auto;
 }
 
 .switch-button-container:hover{
@@ -140,7 +152,7 @@ section{
 
 .skills-container{
     margin-top: 7vh;
-    margin-bottom: 7vh;
+    margin-bottom: 18vh;
     transform-style: preserve-3d;
     transform: perspective(1000px);
     animation: autoRun 20s linear infinite;
@@ -159,15 +171,15 @@ section{
 .skill-container{
     display: flex;
     justify-content: center;
-    height: 5em;
-    width: 5em;
+    height: 15vh;
+    width: 15vh;
     border: 0.2em solid black;
     border-color: black;
     border-radius: 5%;
     position: absolute;
     transform: 
         rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
-        translateZ(200px);     
+        translateZ(19vw);     
 }
 
 .skill-container:hover {
@@ -462,12 +474,6 @@ section{
     border-radius: 10%;
 }
 
-.svg-item {
-    width: 500px;
-    height: 500px;
-    animation: aparecer 1s ease-out;
-}
-
 .svg-container {
     position: fixed;
     top: 0;
@@ -683,6 +689,24 @@ iframe {
     
     .dark-mode a{
         font-size: 0.8em;
+    }
+
+    .skill-container{
+        display: flex;
+        justify-content: center;
+        height: 18vw;
+        width: 18vw;
+        border: 0.2em solid black;
+        border-color: black;
+        border-radius: 5%;
+        position: absolute;
+        transform: 
+            rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+            translateZ(40vw);
+    }
+
+    section{
+        width: 70%;
     }
 }
 

@@ -60,6 +60,7 @@ body.dark-mode {
     background: linear-gradient(to bottom, black, transparent);
     margin: 0;
     padding: 0;
+    pointer-events: auto;
 }
 
 .navBar li{

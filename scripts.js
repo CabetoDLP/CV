@@ -124,6 +124,7 @@ const languages = {
     sendButton: `Enviar`,
     filesTitle: `Anexos`,
     curriculum: `Hoja de vida`,
+    curriculumPath: './Resources/HV Carlos de la Peña.pdf',
     sendMessage: `Mensaje enviado exitosamente`,
     sendErrorMessage: `Ocurrio un error al enviar su mensaje, por favor intentelo nuevamente`
   },
@@ -153,6 +154,7 @@ const languages = {
     sendButton: `Submit`,
     filesTitle: `Files`,
     curriculum: `Curriculum`,
+    curriculumPath: './Resources/CV Carlos de la Peña.pdf',
     sendMessage: `Message sent successfully`,
     sendErrorMessage: `An error happened while sending the message, please try again`
   }

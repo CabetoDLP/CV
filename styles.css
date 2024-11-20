@@ -122,6 +122,40 @@ body.dark-mode {
     background: linear-gradient(to bottom, rgb(135, 251, 199), rgb(14, 112, 205));
     border-radius: 5%;
     top: 5em;
+    background-size: 100% 200%;
+    animation: slideBackground 2s infinite alternate ease; /* Aplica la animación */
+}
+
+.dev-svg{
+    height: 10em; 
+    width: 10em; 
+    z-index: 1; 
+    align-self: center; 
+    position: absolute;
+    top: 7em;
+    animation: rotateElement 4s infinite ease;
+}
+
+@keyframes rotateElement {
+    0% {
+        transform: scale(1) rotate(-360deg);
+    }
+    50%{
+        transform: scale(3.3);
+    }
+    100%{
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+/* Definición de la animación */
+@keyframes slideBackground {
+    0% {
+        background-position: top; /* Inicio del degradado en la parte superior */
+    }
+    100% {
+        background-position: bottom; /* Final del degradado en la parte inferior */
+    }
 }
 
 section{

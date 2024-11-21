@@ -1,6 +1,5 @@
 html{
     scroll-behavior: smooth;
-
 }
 
 body.light-mode{
@@ -127,8 +126,8 @@ body.dark-mode {
 }
 
 .dev-svg{
-    height: 10em; 
-    width: 10em; 
+    height: 13em; 
+    width: 13em; 
     z-index: 1; 
     align-self: center; 
     position: absolute;
@@ -141,7 +140,7 @@ body.dark-mode {
         transform: scale(1) rotate(-360deg);
     }
     50%{
-        transform: scale(3.3);
+        transform: scale(2.2);
     }
     100%{
         transform: scale(1) rotate(360deg);
@@ -608,7 +607,7 @@ iframe {
     
     .background-shape{
         background-color: gray; 
-        height: 10em; 
+        height: 9.5em; 
         width: 8em; 
         z-index: 1; 
         align-self: center; 
@@ -616,6 +615,16 @@ iframe {
         background: linear-gradient(to bottom, rgb(135, 251, 199), rgb(14, 112, 205));
         border-radius: 5%;
         top: 5em;
+    }
+
+    .dev-svg{
+        height: 8em; 
+        width: 8em; 
+        z-index: 1; 
+        align-self: center; 
+        position: absolute;
+        top: 7em;
+        animation: rotateElement 4s infinite ease;
     }
     
     .info{

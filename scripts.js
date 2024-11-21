@@ -136,11 +136,11 @@ const languages = {
     aProjectsText: `Projects`,
     aContactText: `Contact`,
     aFilesText: `Files`,
-    descriptionText: `Systems engineer focused on the development of web projects. With programming experience in both the front-end and back-end sections, willing to collaborate in work teams or develop independent web projects.`,
+    descriptionText: `Systems engineer focused on the development of web projects. With programming experience in both the front-end and back-end technologies, willing to collaborate in work teams or independently managing web projects.`,
     skillsTitle: `Skills`,
     skillsText: `I present practical experience in programming fundamentals, OOP, relational databases and web servers (APIs) in ASP.net, .NET core and Spring Boot, in addition to managing the DOM with HTML, CSS and Javascript.`,
     experienceTitle: `Experience`,
-    experienceText: `I worked as a web programmer as a development assistant at <a href="https://www.smitco.com.co/" target="_blank">SMITCO</a>. I developed a platform for damage management of the company's containers using asp.net and left a user platform in development using .NET core.`,
+    experienceText: `I worked as a web developer as a development assistant at <a href="https://www.smitco.com.co/" target="_blank">SMITCO</a>. I developed a platform for damage management of the company's containers using asp.net and left a user platform in development using .NET core.`,
     studiesTitle: `Studies`,
     magdalena: `Magdalena's University`,
     nodeJS: `NodeJS: Zero to expert`,
@@ -156,7 +156,7 @@ const languages = {
     curriculum: `Curriculum`,
     curriculumPath: './Resources/CV Carlos de la Peña.pdf',
     sendMessage: `Message sent successfully`,
-    sendErrorMessage: `An error happened while sending the message, please try again`
+    sendErrorMessage: `An error ocurred while sending the message, please try again`
   }
 }
 

@@ -646,7 +646,7 @@ iframe {
         height: fit-content;
     }
 
-    .light-mode .project-container{
+    .light-mode .project-container, .dark-mode .project-container{
         width: 18em;
     }
 

@@ -107,7 +107,7 @@ body.dark-mode {
 }
 
 .circle-mask img{
-    width: 16em; /* Tamaño de la máscara circular */
+    width: 20em; /* Tamaño de la máscara circular */
     height: auto;
 }
 
@@ -229,6 +229,7 @@ section{
     height: 50px;
 }
 
+/*
 .studies-container{
     display: flex;
     justify-content: center;
@@ -272,6 +273,7 @@ section{
     width: fit-content;
     border-radius: 5%;
 }
+*/
 
 .projects-container{
     display: flex;
@@ -780,4 +782,45 @@ iframe {
         width: 40vw;
         height: fit-content;
     }
+}
+
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80vw; /* Ancho máximo */
+    max-height: 80vh; /* Altura máxima del modal */
+    overflow: hidden; /* Oculta el contenido que exceda el modal */
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto; /* Habilita el scroll vertical */
+    padding-right: 10px; /* Espacio para el scroll */
+    flex-grow: 1; /* Permite que el cuerpo ocupe el espacio restante */
+}
+
+/* Estilos para el botón de cierre */
+header button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 1.5rem;
 }

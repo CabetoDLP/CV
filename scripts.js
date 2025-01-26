@@ -111,11 +111,23 @@ const languages = {
     skillsText: `Presento experiencia practica en fundamentos de programación, POO, bases de datos relacionales y servidores web (APIs) en ASP.net, .NET core y Spring Boot, ademas del manejo del DOM con HTML, CSS y Javascript`,
     experienceTitle: `Experiencia`,
     experienceText: `Trabajé de programador web como auxiliar de desarrollo en <a href="https://www.smitco.com.co/" target="_blank">SMITCO</a>. Desarrollé una plataforma para la gestión de daños de los contenedores de la compañia usando asp.net y deje en desarrollo una plataforma de usuarios utilizando .NET core.`,
+    /*
     studiesTitle: `Formación`,
     magdalena: `Universidad del Magdalena`,
     nodeJS: `NodeJS: De cero a experto`,
     react: `React: De cero a experto ( Hooks y MERN )`,
     spring: `Spring Framework 6 & Spring Boot 3 desde cero a experto 2024`,
+    */
+    htmlDescription: `Desarrollo estructuras semánticas y accesibles para los proyectos. A través de mi experiencia he trabajado con etiquetas semánticas, formularios interactivos, integración de multimedia, enlaces y navegación, metadatos y optimización, compatibilidad y accesibilidad.`,
+    cssDescription: `Diseño responsivo, animaciones y sistemas de temas claros y oscuros. Utilizo media queries, Flexbox y CSS Grid para crear layouts adaptables y eficientes. Implemento animaciones fluidas con @keyframes y transition, y aplico efectos visuales como gradientes y sombras para diseños modernos.`,
+    javascriptDescription: `Manipulación del DOM, creación de interfaces dinámicas y uso de eventos para mejorar la interactividad del usuario. Implementación de lógica del lado del cliente, manejo de peticiones asíncronas (AJAX, Fetch API) y uso de librerías y frameworks modernos para desarrollo web. Conocimientos en programación funcional y orientada a objetos, así como en la integración de APIs y servicios externos.`,
+    typescriptDescription: `Desarrollo de aplicaciones backend con TypeScript, utilizando interfaces y tipos para garantizar la seguridad y consistencia del código. Implementación de validaciones de tipos, manejo de errores y estructuras de datos bien definidas. Uso de TypeScript en conjunto con Express para crear APIs robustas y escalables, integrando bases de datos y servicios externos con tipado seguro.`,
+    reactDescription: `Desarrollo de aplicaciones web modernas y responsivas con React. Uso de componentes funcionales, hooks (como useState, useEffect, y useContext), y manejo de estado global con Context API. Implementación de rutas dinámicas con React Router, integración con APIs RESTful, y creación de interfaces interactivas.`,
+    nodejsDescription: `Desarrollo de aplicaciones backend con Node.js, utilizando Express para crear APIs RESTful y WebSockets para comunicación en tiempo real. Implementación de autenticación basada en tokens (JWT), manejo de bases de datos PostgreSQL, y uso de middlewares para validación y seguridad. Desarrollo de sistemas escalables y eficientes, con enfoque en la gestión de rutas, controladores y servicios.`,
+    springDescription: `Desarrollo de aplicaciones backend robustas con Spring Boot, enfocándome en la creación de APIs RESTful y la integración con bases de datos como PostgreSQL. Manejo del sistema de dependencias con Spring Data JPA. Implementación de patrones de diseño como MVC y uso de controladores, servicios y repositorios para garantizar una arquitectura escalable y mantenible.`,
+    netcoreDescription: `Desarrollo de aplicaciones backend con .NET Core, implementando APIs RESTful y conectándolas a bases de datos relacionales como PostgreSQL y SQL Server. Uso de Entity Framework para realizar consultas eficientes a la base de datos. Creación de controladores, servicios y repositorios siguiendo buenas prácticas de diseño.`,
+    posgreDescription: `Modelado y administración de bases de datos relacionales utilizando PostgreSQL. Diseño de esquemas eficientes, creación de relaciones entre tablas y optimización de consultas mediante índices y técnicas avanzadas de SQL. Experiencia con proyectos backend desarrollados en Spring Boot, .NET Core y Node.js.`,
+    sqlserverDescription: `Gestión de bases de datos relacionales con SQL Server, incluyendo diseño de tablas, índices y procedimientos almacenados. Uso de herramientas de administración como SQL Server Management Studio (SSMS) para realizar tareas de mantenimiento y optimización. Integración de SQL Server en proyectos desarrollados con .NET Core.`,
     projectsTitle: `Proyectos`,
     contactTitle: `Contactame`,
     formName: `Tu nombre`,
@@ -141,11 +153,23 @@ const languages = {
     skillsText: `I present practical experience in programming fundamentals, OOP, relational databases and web servers (APIs) in ASP.net, .NET core and Spring Boot, in addition to managing the DOM with HTML, CSS and Javascript.`,
     experienceTitle: `Experience`,
     experienceText: `I worked as a web developer as a development assistant at <a href="https://www.smitco.com.co/" target="_blank">SMITCO</a>. I developed a platform for damage management of the company's containers using asp.net and left a user platform in development using .NET core.`,
+    /*
     studiesTitle: `Studies`,
     magdalena: `Magdalena's University`,
     nodeJS: `NodeJS: Zero to expert`,
     react: `React: Zero to expert (Hooks & Mern)`,
     spring: `Spring Framework 6 & Spring Boot 3 since zero to expert 2024`,
+    */
+    htmlDescription: `Development of semantic and accessible structures for projects. Through my experience, I have worked with semantic tags, interactive forms, multimedia integration, links and navigation, metadata and optimization, compatibility, and accessibility.`,
+cssDescription: `Responsive design, animations, and light/dark theme systems. I use media queries, Flexbox, and CSS Grid to create adaptable and efficient layouts. I implement smooth animations with @keyframes and transition, and apply visual effects like gradients and shadows for modern designs.`,
+javascriptDescription: `DOM manipulation, creation of dynamic interfaces, and use of events to enhance user interactivity. Implementation of client-side logic, handling of asynchronous requests (AJAX, Fetch API), and use of modern libraries and frameworks for web development. Knowledge of functional and object-oriented programming, as well as integration with APIs and external services.`,
+typescriptDescription: `Development of backend applications with TypeScript, using interfaces and types to ensure code safety and consistency. Implementation of type validations, error handling, and well-defined data structures. Use of TypeScript alongside Express to create robust and scalable APIs, integrating databases and external services with secure typing.`,
+reactDescription: `Development of modern and responsive web applications with React. Use of functional components, hooks (such as useState, useEffect, and useContext), and global state management with Context API. Implementation of dynamic routes with React Router, integration with RESTful APIs, and creation of interactive interfaces.`,
+nodejsDescription: `Development of backend applications with Node.js, using Express to create RESTful APIs and WebSockets for real-time communication. Implementation of token-based authentication (JWT), PostgreSQL database management, and use of middlewares for validation and security. Development of scalable and efficient systems, focusing on route, controller, and service management.`,
+springDescription: `Development of robust backend applications with Spring Boot, focusing on creating RESTful APIs and integrating with databases like PostgreSQL. Management of dependency systems with Spring Data JPA. Implementation of design patterns like MVC and use of controllers, services, and repositories to ensure a scalable and maintainable architecture.`,
+netcoreDescription: `Development of backend applications with .NET Core, implementing RESTful APIs and connecting them to relational databases like PostgreSQL and SQL Server. Use of Entity Framework for efficient database queries. Creation of controllers, services, and repositories following best design practices.`,
+posgreDescription: `Modeling and administration of relational databases using PostgreSQL. Design of efficient schemas, creation of table relationships, and query optimization through indexes and advanced SQL techniques. Experience with backend projects developed in Spring Boot, .NET Core, and Node.js.`,
+sqlserverDescription: `Management of relational databases with SQL Server, including table design, indexes, and stored procedures. Use of administration tools like SQL Server Management Studio (SSMS) for maintenance and optimization tasks. Integration of SQL Server in projects developed with .NET Core.`,
     projectsTitle: `Projects`,
     contactTitle: `Contact me`,
     formName: `Your name`,
@@ -172,11 +196,13 @@ let skillsTitle = document.getElementById(`skills-title`);
 let skillsText = document.getElementById(`skills-text`);
 let experienceTitle = document.getElementById(`experience-title`);
 let experienceText = document.getElementById(`experience-text`);
+/*
 let studiesTitle = document.getElementById(`studies-title`);
 let magdalena = document.getElementById(`magdalena-study`);
 let nodeJS = document.getElementById(`nodeJS-study`);
 let react = document.getElementById(`react-study`);
 let spring = document.getElementById(`spring-study`);
+*/
 let projectsTitle = document.getElementById(`projects-title`);
 let contactTitle = document.getElementById(`contact-title`);
 let formName = document.getElementById(`form-name`);
@@ -196,7 +222,7 @@ function alterLanguage(){
   aPresentationText.innerHTML = languages[language].aPresentationText;
   aSkillsText.innerHTML = languages[language].aSkillsText;
   aExperienceText.innerHTML = languages[language].aExperienceText;
-  aStudiesText.innerHTML = languages[language].aStudiesText;
+  //aStudiesText.innerHTML = languages[language].aStudiesText;
   aProjectsText.innerHTML = languages[language].aProjectsText;
   aContactText.innerHTML = languages[language].aContactText;
   aFilesText.innerHTML = languages[language].aFilesText;
@@ -205,11 +231,13 @@ function alterLanguage(){
   skillsText.innerHTML = languages[language].skillsText;
   experienceTitle.innerHTML = languages[language].experienceTitle;
   experienceText.innerHTML = languages[language].experienceText; 
+  /*
   studiesTitle.innerHTML = languages[language].studiesTitle; 
   magdalena.innerHTML = languages[language].magdalena; 
   nodeJS.innerHTML = languages[language].nodeJS;
   react.innerHTML = languages[language].react; 
   spring.innerHTML = languages[language].spring;
+  */
   projectsTitle.innerHTML = languages[language].projectsTitle;
   contactTitle.innerHTML = languages[language].contactTitle;
   formName.placeholder = languages[language].formName;
@@ -226,10 +254,12 @@ function openLink(link){
   window.open(link, `_blank`);
 }
 
+/*
 document.getElementById(`unimag`).addEventListener(`click`, function() {openLink(`https://www.unimagdalena.edu.co/`)});
 document.getElementById(`nodeJS`).addEventListener(`click`, function() {openLink(`https://www.udemy.com/course/nodejs-de-cero-a-experto/`)});
 document.getElementById(`react`).addEventListener(`click`, function() {openLink(`https://www.udemy.com/course/react-cero-experto/`)});
 document.getElementById(`spring`).addEventListener(`click`, function() {openLink(`https://www.udemy.com/course/spring-framework-5/`)});
+*/
 
 document.getElementById(`cabetoArt`).addEventListener(`click`, function() {openLink(`https://cabeto-art.vercel.app/`)});
 
@@ -265,9 +295,68 @@ function openPDFModal(pdfURL) {
   modal.style.display = 'flex'; // Muestra el modal
 }
 
+function openSkillModal(event) {
+  const modal = document.getElementById('skill-modal');
+  const skillIcon = document.getElementById('skill-icon');
+  const skillTitle = document.getElementById('skill-title');
+  const skillInformation = document.getElementById('skill-information');
+  const selectedSkillIcon = event.currentTarget;
+  skillIcon.innerHTML = selectedSkillIcon.innerHTML;
+
+  switch (event.currentTarget.id){
+    case 'html-icon':
+      skillTitle.innerHTML = 'HTML'
+      skillInformation.innerHTML = languages[language].htmlDescription;
+    break;
+    case 'css-icon':
+      skillTitle.innerHTML = 'CSS'
+      skillInformation.innerHTML = languages[language].cssDescription;
+    break;
+    case 'javascript-icon':
+      skillTitle.innerHTML = 'Javascript'
+      skillInformation.innerHTML = languages[language].javascriptDescription;
+    break;
+    case 'typescript-icon':
+      skillTitle.innerHTML = 'Typescript'
+      skillInformation.innerHTML = languages[language].typescriptDescription;
+    break;
+    case 'react-icon':
+      skillTitle.innerHTML = 'React'
+      skillInformation.innerHTML = languages[language].reactDescription;
+    break;
+    case 'nodejs-icon':
+      skillTitle.innerHTML = 'Node.JS'
+      skillInformation.innerHTML = languages[language].nodejsDescription;
+    break;
+    case 'spring-icon':
+      skillTitle.innerHTML = 'Spring Boot'
+      skillInformation.innerHTML = languages[language].springDescription;
+    break;
+    case 'netcore-icon':
+      skillTitle.innerHTML = '.NET Core'
+      skillInformation.innerHTML = languages[language].netcoreDescription;
+    break;
+    case 'posgre-icon':
+      skillTitle.innerHTML = 'Postgre'
+      skillInformation.innerHTML = languages[language].posgreDescription;
+    break;
+    case 'sqlserver-icon':
+      skillTitle.innerHTML = 'SQL Server'
+      skillInformation.innerHTML = languages[language].sqlserverDescription;
+    break;
+  }
+
+  modal.style.display = 'flex'; // Muestra el modal
+}
+
+const skillContainers = document.querySelectorAll('.skill-container');
+skillContainers.forEach(container => {
+    container.addEventListener('click', openSkillModal);
+});
+
 // Función para cerrar el modal
-function closeModal() {
-  const modal = document.getElementById('pdfModal');
+function closeModal(modalId) {
+  const modal = document.getElementById(modalId);
   modal.style.display = 'none';
   document.getElementById('pdfViewer').src = ''; // Limpia el src del iframe
 }

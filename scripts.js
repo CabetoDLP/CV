@@ -161,15 +161,15 @@ const languages = {
     spring: `Spring Framework 6 & Spring Boot 3 since zero to expert 2024`,
     */
     htmlDescription: `Development of semantic and accessible structures for projects. Through my experience, I have worked with semantic tags, interactive forms, multimedia integration, links and navigation, metadata and optimization, compatibility, and accessibility.`,
-cssDescription: `Responsive design, animations, and light/dark theme systems. I use media queries, Flexbox, and CSS Grid to create adaptable and efficient layouts. I implement smooth animations with @keyframes and transition, and apply visual effects like gradients and shadows for modern designs.`,
-javascriptDescription: `DOM manipulation, creation of dynamic interfaces, and use of events to enhance user interactivity. Implementation of client-side logic, handling of asynchronous requests (AJAX, Fetch API), and use of modern libraries and frameworks for web development. Knowledge of functional and object-oriented programming, as well as integration with APIs and external services.`,
-typescriptDescription: `Development of backend applications with TypeScript, using interfaces and types to ensure code safety and consistency. Implementation of type validations, error handling, and well-defined data structures. Use of TypeScript alongside Express to create robust and scalable APIs, integrating databases and external services with secure typing.`,
-reactDescription: `Development of modern and responsive web applications with React. Use of functional components, hooks (such as useState, useEffect, and useContext), and global state management with Context API. Implementation of dynamic routes with React Router, integration with RESTful APIs, and creation of interactive interfaces.`,
-nodejsDescription: `Development of backend applications with Node.js, using Express to create RESTful APIs and WebSockets for real-time communication. Implementation of token-based authentication (JWT), PostgreSQL database management, and use of middlewares for validation and security. Development of scalable and efficient systems, focusing on route, controller, and service management.`,
-springDescription: `Development of robust backend applications with Spring Boot, focusing on creating RESTful APIs and integrating with databases like PostgreSQL. Management of dependency systems with Spring Data JPA. Implementation of design patterns like MVC and use of controllers, services, and repositories to ensure a scalable and maintainable architecture.`,
-netcoreDescription: `Development of backend applications with .NET Core, implementing RESTful APIs and connecting them to relational databases like PostgreSQL and SQL Server. Use of Entity Framework for efficient database queries. Creation of controllers, services, and repositories following best design practices.`,
-posgreDescription: `Modeling and administration of relational databases using PostgreSQL. Design of efficient schemas, creation of table relationships, and query optimization through indexes and advanced SQL techniques. Experience with backend projects developed in Spring Boot, .NET Core, and Node.js.`,
-sqlserverDescription: `Management of relational databases with SQL Server, including table design, indexes, and stored procedures. Use of administration tools like SQL Server Management Studio (SSMS) for maintenance and optimization tasks. Integration of SQL Server in projects developed with .NET Core.`,
+    cssDescription: `Responsive design, animations, and light/dark theme systems. I use media queries, Flexbox, and CSS Grid to create adaptable and efficient layouts. I implement smooth animations with @keyframes and transition, and apply visual effects like gradients and shadows for modern designs.`,
+    javascriptDescription: `DOM manipulation, creation of dynamic interfaces, and use of events to enhance user interactivity. Implementation of client-side logic, handling of asynchronous requests (AJAX, Fetch API), and use of modern libraries and frameworks for web development. Knowledge of functional and object-oriented programming, as well as integration with APIs and external services.`,
+    typescriptDescription: `Development of backend applications with TypeScript, using interfaces and types to ensure code safety and consistency. Implementation of type validations, error handling, and well-defined data structures. Use of TypeScript alongside Express to create robust and scalable APIs, integrating databases and external services with secure typing.`,
+    reactDescription: `Development of modern and responsive web applications with React. Use of functional components, hooks (such as useState, useEffect, and useContext), and global state management with Context API. Implementation of dynamic routes with React Router, integration with RESTful APIs, and creation of interactive interfaces.`,
+    nodejsDescription: `Development of backend applications with Node.js, using Express to create RESTful APIs and WebSockets for real-time communication. Implementation of token-based authentication (JWT), PostgreSQL database management, and use of middlewares for validation and security. Development of scalable and efficient systems, focusing on route, controller, and service management.`,
+    springDescription: `Development of robust backend applications with Spring Boot, focusing on creating RESTful APIs and integrating with databases like PostgreSQL. Management of dependency systems with Spring Data JPA. Implementation of design patterns like MVC and use of controllers, services, and repositories to ensure a scalable and maintainable architecture.`,
+    netcoreDescription: `Development of backend applications with .NET Core, implementing RESTful APIs and connecting them to relational databases like PostgreSQL and SQL Server. Use of Entity Framework for efficient database queries. Creation of controllers, services, and repositories following best design practices.`,
+    posgreDescription: `Modeling and administration of relational databases using PostgreSQL. Design of efficient schemas, creation of table relationships, and query optimization through indexes and advanced SQL techniques. Experience with backend projects developed in Spring Boot, .NET Core, and Node.js.`,
+    sqlserverDescription: `Management of relational databases with SQL Server, including table design, indexes, and stored procedures. Use of administration tools like SQL Server Management Studio (SSMS) for maintenance and optimization tasks. Integration of SQL Server in projects developed with .NET Core.`,
     projectsTitle: `Projects`,
     contactTitle: `Contact me`,
     formName: `Your name`,
@@ -353,6 +353,29 @@ const skillContainers = document.querySelectorAll('.skill-container');
 skillContainers.forEach(container => {
     container.addEventListener('click', openSkillModal);
 });
+
+function openWarningModal(componentId) {
+  const modal = document.getElementById('warning-modal');
+  const warningTitle = document.getElementById('warning-title');
+  const warningInformation = document.getElementById('warning-information');
+
+  // Obtener el componente que activó el modal
+  const component = document.getElementById(componentId);
+
+  if(language === `english`){
+    warningTitle.innerHTML = component.getAttribute('data-title-en');
+    warningInformation.innerHTML = component.getAttribute('data-information-en');
+  }
+  else if (language === `spanish`){
+    warningTitle.innerHTML = component.getAttribute('data-title-es');
+    warningInformation.innerHTML = component.getAttribute('data-information-es');
+  }
+
+  // Mostrar el modal
+  modal.style.display = 'flex';
+}
+
+document.getElementById(`reactStore`).addEventListener(`click`,function() {openWarningModal('reactStore')});
 
 // Función para cerrar el modal
 function closeModal(modalId) {

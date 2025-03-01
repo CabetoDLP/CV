@@ -261,6 +261,7 @@ document.getElementById(`react`).addEventListener(`click`, function() {openLink(
 document.getElementById(`spring`).addEventListener(`click`, function() {openLink(`https://www.udemy.com/course/spring-framework-5/`)});
 */
 
+document.getElementById(`reactStore`).addEventListener(`click`, function() {openLink(`https://orange-grass-05a93b810.6.azurestaticapps.net/login`)});
 document.getElementById(`cabetoArt`).addEventListener(`click`, function() {openLink(`https://cabeto-art.vercel.app/`)});
 
 document.querySelector(`.contact-form`).addEventListener(`submit`, function (event){
@@ -375,7 +376,7 @@ function openWarningModal(componentId) {
   modal.style.display = 'flex';
 }
 
-document.getElementById(`reactStore`).addEventListener(`click`,function() {openWarningModal('reactStore')});
+//document.getElementById(`reactStore`).addEventListener(`click`,function() {openWarningModal('reactStore')});
 
 // Función para cerrar el modal
 function closeModal(modalId) {

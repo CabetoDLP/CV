@@ -328,6 +328,13 @@ section{
     border-radius: 5%;
 }
 
+.project-container video{
+    margin-top: 1vh;
+    height: auto;
+    width: auto;
+    border-radius: 5%;
+}
+
 .project-skills-container{
     display: flex;
     flex-direction: row;

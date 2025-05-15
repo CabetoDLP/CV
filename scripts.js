@@ -263,6 +263,7 @@ document.getElementById(`spring`).addEventListener(`click`, function() {openLink
 
 document.getElementById(`reactStore`).addEventListener(`click`, function() {openLink(`https://orange-grass-05a93b810.6.azurestaticapps.net/login`)});
 document.getElementById(`cabetoArt`).addEventListener(`click`, function() {openLink(`https://cabeto-art.vercel.app/`)});
+document.getElementById(`dinoLink`).addEventListener(`click`, function() {openLink(`https://dino-link.vercel.app/`)});
 
 document.querySelector(`.contact-form`).addEventListener(`submit`, function (event){
 
